@@ -12,7 +12,7 @@ class _DoctorState extends State<Doctor> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20),
         child: Column(
@@ -29,8 +29,9 @@ class _DoctorState extends State<Doctor> {
                   width: 30,
                   height: 30,
                   decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: const Color.fromARGB(255, 235, 229, 229)),
+                    shape: BoxShape.circle,
+                    //  color: const Color.fromARGB(255, 235, 229, 229)
+                  ),
                   child: Center(
                     child: Icon(Icons.notifications_outlined),
                   ),
@@ -52,8 +53,8 @@ class _DoctorState extends State<Doctor> {
                         width: 190,
                         height: 50,
                         decoration: BoxDecoration(
-                            color: Colors.amber,
-                            // color: Color(0xffff5f6fa),
+                            //  color: Colors.amber,
+                            color: const Color.fromARGB(255, 233, 230, 230),
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(20),
                                 topLeft: Radius.circular(20))),
@@ -71,8 +72,8 @@ class _DoctorState extends State<Doctor> {
                           width: 190,
                           height: 50,
                           decoration: BoxDecoration(
-                              color: Colors.red,
-                              // color: Color(0xffffefefe),
+                              // color: Colors.red,
+                              color: Color(0xffffefefe),
                               borderRadius: BorderRadius.circular(20)),
                           child: Center(
                             child: Text(
@@ -162,8 +163,9 @@ class _DoctorState extends State<Doctor> {
                               Text(
                                 'Appointment  date',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blueGrey,
+                                ),
                               ),
                               SizedBox(
                                 height: 5,
@@ -258,7 +260,9 @@ class _DoctorState extends State<Doctor> {
                                       ),
                                       Text(
                                         'Orthopedic',
-                                        style: TextStyle(color: Colors.grey),
+                                        style: TextStyle(
+                                          color: Colors.blueGrey,
+                                        ),
                                       )
                                     ],
                                   )
@@ -301,8 +305,9 @@ class _DoctorState extends State<Doctor> {
                               Text(
                                 'Appointment  date',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blueGrey,
+                                ),
                               ),
                               SizedBox(
                                 height: 5,
@@ -397,7 +402,9 @@ class _DoctorState extends State<Doctor> {
                                       ),
                                       Text(
                                         'Obstetrician',
-                                        style: TextStyle(color: Colors.grey),
+                                        style: TextStyle(
+                                          color: Colors.blueGrey,
+                                        ),
                                       )
                                     ],
                                   )
@@ -447,8 +454,9 @@ class _DoctorState extends State<Doctor> {
                                   Text(
                                     'Appointment date',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.grey),
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blueGrey,
+                                    ),
                                   ),
                                   SizedBox(
                                     height: 5,
@@ -542,8 +550,9 @@ class _DoctorState extends State<Doctor> {
                                           ),
                                           Text(
                                             'Dermatologist',
-                                            style:
-                                                TextStyle(color: Colors.grey),
+                                            style: TextStyle(
+                                              color: Colors.blueGrey,
+                                            ),
                                           )
                                         ],
                                       )

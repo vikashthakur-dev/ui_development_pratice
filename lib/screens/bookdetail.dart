@@ -135,11 +135,15 @@ class _BookdetailState extends State<Bookdetail> {
                             ),
                             Text(
                               'Monday , 20 Jun 2022',
-                              style: TextStyle(color: Colors.grey),
+                              style: TextStyle(
+                                color: Colors.blueGrey,
+                              ),
                             ),
                             Text(
                               ' 08:AM',
-                              style: TextStyle(color: Colors.grey),
+                              style: TextStyle(
+                                color: Colors.blueGrey,
+                              ),
                             )
                           ],
                         ),
@@ -186,7 +190,9 @@ class _BookdetailState extends State<Bookdetail> {
                             ),
                             Text(
                               'Video Call',
-                              style: TextStyle(color: Colors.grey),
+                              style: TextStyle(
+                                color: Colors.blueGrey,
+                              ),
                             ),
                             SizedBox(
                               height: 10,
@@ -252,7 +258,9 @@ class _BookdetailState extends State<Bookdetail> {
                     ),
                     Text(
                       'Surgery',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                      ),
                     )
                   ],
                 ),

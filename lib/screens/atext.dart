@@ -13,6 +13,8 @@ class _AtextState extends State<Atext> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+
       appBar: AppBar(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromARGB(255, 2, 84, 226),
@@ -49,7 +51,7 @@ class _AtextState extends State<Atext> {
           });
         },
       ),
-      backgroundColor: const Color.fromARGB(255, 252, 248, 248),
+      //  backgroundColor: const Color.fromARGB(255, 252, 248, 248),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -116,7 +118,10 @@ class _AtextState extends State<Atext> {
                       ),
                       Text(
                         'Have a Nice day 😋 ',
-                        style: TextStyle(fontSize: 15, color: Colors.grey),
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.blueGrey,
+                        ),
                       ),
                       SizedBox(
                         height: 20,
@@ -311,7 +316,9 @@ class _AtextState extends State<Atext> {
                                       children: [
                                         Text(
                                           'Appointment  date',
-                                          style: TextStyle(color: Colors.grey),
+                                          style: TextStyle(
+                                            color: Colors.blueGrey,
+                                          ),
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -409,7 +416,8 @@ class _AtextState extends State<Atext> {
                                                 Text(
                                                   'Orthopedic',
                                                   style: TextStyle(
-                                                      color: Colors.grey),
+                                                    color: Colors.blueGrey,
+                                                  ),
                                                 )
                                               ],
                                             )

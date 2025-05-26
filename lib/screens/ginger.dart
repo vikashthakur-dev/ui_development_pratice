@@ -12,6 +12,7 @@ class _GingerState extends State<Ginger> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20),
         child: SingleChildScrollView(
@@ -199,7 +200,7 @@ class _GingerState extends State<Ginger> {
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 15,
-                                                color: Colors.grey),
+                                                color: Colors.blueGrey),
                                           )
                                         ],
                                       )
@@ -236,7 +237,7 @@ class _GingerState extends State<Ginger> {
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 15,
-                                                color: Colors.grey),
+                                                color: Colors.blueGrey),
                                           )
                                         ],
                                       )
@@ -279,7 +280,7 @@ class _GingerState extends State<Ginger> {
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 15,
-                                                color: Colors.grey),
+                                                color: Colors.blueGrey),
                                           )
                                         ],
                                       )
@@ -316,7 +317,7 @@ class _GingerState extends State<Ginger> {
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 15,
-                                                color: Colors.grey),
+                                                color: Colors.blueGrey),
                                           )
                                         ],
                                       )

@@ -12,6 +12,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.only(top: 30, left: 20, right: 20),
         child: Column(
@@ -81,7 +82,7 @@ class _ProfileState extends State<Profile> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,9 +90,13 @@ class _ProfileState extends State<Profile> {
                 Text(
                   'General',
                   style: TextStyle(
-                    color: const Color.fromARGB(255, 107, 105, 105),
+                    color: Colors.blueGrey,
+                    //   color: const Color.fromARGB(255, 107, 105, 105),
                     fontSize: 18,
                   ),
+                ),
+                SizedBox(
+                  height: 15,
                 ),
                 ListTile(
                     title: Text(
@@ -100,7 +105,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     subtitle: Text(
                       'Change your account information',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.blueGrey),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios_outlined,
@@ -108,15 +113,15 @@ class _ProfileState extends State<Profile> {
                     ),
                     leading: Container(
                       // padding: EdgeInsets.all(8),
-                      width: 30,
-                      height: 30,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: const Color.fromARGB(255, 235, 229, 229)),
                       child: Center(
                         child: Icon(
                           Icons.person,
-                          color: Colors.blue,
+                          color: Colors.indigo,
                         ),
                       ),
                     )),
@@ -131,16 +136,17 @@ class _ProfileState extends State<Profile> {
                     ),
                     subtitle: Text(
                       'Add your insurance info',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.blueGrey),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios_outlined,
+                      color: Colors.blueGrey,
                       size: 15,
                     ),
                     leading: Container(
                       // padding: EdgeInsets.all(8),
-                      width: 30,
-                      height: 30,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: const Color.fromARGB(255, 235, 229, 229)),
@@ -162,16 +168,17 @@ class _ProfileState extends State<Profile> {
                     ),
                     subtitle: Text(
                       'History about your medical records',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.blueGrey),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios_outlined,
+                      color: Colors.blueGrey,
                       size: 15,
                     ),
                     leading: Container(
                       // padding: EdgeInsets.all(8),
-                      width: 30,
-                      height: 30,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: const Color.fromARGB(255, 235, 229, 229)),
@@ -188,16 +195,17 @@ class _ProfileState extends State<Profile> {
                     ),
                     subtitle: Text(
                       'Information about our Clinic',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.blueGrey),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios_outlined,
+                      color: Colors.blueGrey,
                       size: 15,
                     ),
                     leading: Container(
                       // padding: EdgeInsets.all(8),
-                      width: 30,
-                      height: 30,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: const Color.fromARGB(255, 235, 229, 229)),
@@ -214,16 +222,17 @@ class _ProfileState extends State<Profile> {
                     ),
                     subtitle: Text(
                       'Manage & Setting',
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.blueGrey),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios_outlined,
+                      color: Colors.blueGrey,
                       size: 15,
                     ),
                     leading: Container(
                       // padding: EdgeInsets.all(8),
-                      width: 30,
-                      height: 30,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: const Color.fromARGB(255, 235, 229, 229)),
@@ -251,6 +260,7 @@ class _ProfileState extends State<Profile> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         selectedItemColor: const Color.fromARGB(255, 16, 97, 238),
         selectedFontSize: 20,
         type: BottomNavigationBarType.fixed,

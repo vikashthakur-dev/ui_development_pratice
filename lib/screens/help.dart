@@ -12,7 +12,9 @@ class _HelpState extends State<Help> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         leading: Icon(Icons.arrow_back_ios),
         title: Text(
           'Help Center',
@@ -28,10 +30,10 @@ class _HelpState extends State<Help> {
               textAlignVertical: TextAlignVertical.center,
               decoration: InputDecoration(
                   hintText: 'Find your answer here',
-                  hintStyle: TextStyle(color: Colors.grey),
+                  hintStyle: TextStyle(color: Colors.blueGrey),
                   prefixIcon: Icon(
                     CupertinoIcons.search,
-                    color: Colors.black,
+                    color: Colors.blueGrey,
                   )),
             ),
             SizedBox(
@@ -146,7 +148,7 @@ class _HelpState extends State<Help> {
                 Text(
                   'You may also send a message to our customer',
                   style: TextStyle(
-                      color: Colors.grey,
+                      color: Colors.blueGrey,
                       fontSize: 15,
                       fontWeight: FontWeight.bold),
                 ),
@@ -156,7 +158,7 @@ class _HelpState extends State<Help> {
                 Text(
                   'support for futher questions or imformation.',
                   style: TextStyle(
-                      color: Colors.grey,
+                      color: Colors.blueGrey,
                       fontSize: 15,
                       fontWeight: FontWeight.bold),
                 ),
@@ -196,17 +198,17 @@ class _HelpState extends State<Help> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 Text(
                   'We are here to assist you better via inline chat.',
                   style: TextStyle(
-                      color: Colors.grey,
+                      color: Colors.blueGrey,
                       fontSize: 15,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 Container(
                   height: 50,
