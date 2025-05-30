@@ -37,6 +37,7 @@ import 'package:play/screens/search1.dart';
 import 'package:play/screens/searchArticlepage.dart';
 import 'package:play/screens/stakey.dart';
 import 'package:play/screens/verify_account.dart';
+import 'package:play/screens/video_appointment.dart';
 import 'package:play/screens/welcome.dart';
 import 'package:sizer/sizer.dart';
 
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Article(),
+        home: VideoAppointment(),
       );
     });
   }
