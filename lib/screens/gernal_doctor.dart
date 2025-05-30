@@ -10,6 +10,27 @@ class _GernalDoctorState extends State<GernalDoctor> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: Icon(
+          Icons.arrow_back,
+          color: Colors.black,
+        ),
+        title: Text(
+          'General Doctor',
+          style: TextStyle(
+              fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+        actions: [
+          Icon(
+            Icons.filter_alt_outlined,
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 15,
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -17,30 +38,30 @@ class _GernalDoctorState extends State<GernalDoctor> {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              Row(
-                children: [
-                  Icon(
-                    Icons.arrow_back,
-                    color: Colors.black,
-                  ),
-                  Spacer(),
-                  Text(
-                    'General Doctor',
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.filter_alt_outlined,
-                    color: Colors.black,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 30,
-              ),
+              // Row(
+              //   children: [
+              //     Icon(
+              //       Icons.arrow_back,
+              //       color: Colors.black,
+              //     ),
+              //     Spacer(),
+              //     Text(
+              //       'General Doctor',
+              //       style: TextStyle(
+              //           fontSize: 22,
+              //           fontWeight: FontWeight.bold,
+              //           color: Colors.black),
+              //     ),
+              //     Spacer(),
+              //     Icon(
+              //       Icons.filter_alt_outlined,
+              //       color: Colors.black,
+              //     )
+              //   ],
+              // ),
+              // SizedBox(
+              //   height: 30,
+              // ),
               Container(
                 //width: 380,
                 height: 60,

@@ -10,26 +10,41 @@ class _MyprofileState extends State<Myprofile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          'My Profile',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          Icon(
+            Icons.send_to_mobile_rounded,
+            color: Color(0xfffd76062),
+          ),
+          SizedBox(
+            width: 15,
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
-      //ffffff),
       body: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Text(
-                    'My Profile',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.send_to_mobile_rounded,
-                    color: Color(0xfffd76062),
-                  )
-                ],
-              ),
+              // Row(
+              //   children: [
+              //     Text(
+              //       'My Profile',
+              //       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              //     ),
+              //     Spacer(),
+              //     Icon(
+              //       Icons.send_to_mobile_rounded,
+              //       color: Color(0xfffd76062),
+              //     )
+              //   ],
+              // ),
               CircleAvatar(
                 backgroundImage: AssetImage('images/cute.png'),
                 radius: 50,
@@ -324,11 +339,10 @@ class _MyprofileState extends State<Myprofile> {
           ),
         ),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         selectedItemColor: Colors.indigo,
-        selectedFontSize: 20,
+        selectedFontSize: 18,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(

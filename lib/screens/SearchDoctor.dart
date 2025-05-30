@@ -9,6 +9,29 @@ class _SearchDoctorState extends State<SearchDoctor> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: Icon(
+          Icons.arrow_back,
+          color: Colors.black,
+        ),
+        title: Text(
+          'Hospital',
+          style: TextStyle(
+              fontSize: 18,
+              // fontWeight: FontWeight.bold,
+              color: Colors.black),
+        ),
+        actions: [
+          Icon(
+            Icons.filter_alt_outlined,
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 15,
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -16,33 +39,33 @@ class _SearchDoctorState extends State<SearchDoctor> {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              Row(
-                children: [
-                  Icon(
-                    Icons.arrow_back,
-                    color: Colors.black,
-                  ),
-                  Spacer(),
-                  Text(
-                    'Hospital',
-                    style: TextStyle(
-                        fontSize: 18,
-                        // fontWeight: FontWeight.bold,
-                        color: Colors.black),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.filter_alt_outlined,
-                    color: Colors.black,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
+              // Row(
+              //   children: [
+              //     Icon(
+              //       Icons.arrow_back,
+              //       color: Colors.black,
+              //     ),
+              //     Spacer(),
+              //     Text(
+              //       'Hospital',
+              //       style: TextStyle(
+              //           fontSize: 18,
+              //           // fontWeight: FontWeight.bold,
+              //           color: Colors.black),
+              //     ),
+              //     Spacer(),
+              //     Icon(
+              //       Icons.filter_alt_outlined,
+              //       color: Colors.black,
+              //     )
+              //   ],
+              // ),
+              // SizedBox(
+              //   height: 40,
+              // ),
               Container(
                 //width: 380,
-                height: 60,
+                height: 48,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   //  color: Colors.amberAccent
@@ -207,7 +230,7 @@ class _SearchDoctorState extends State<SearchDoctor> {
                                 color: const Color.fromARGB(255, 226, 232, 235),
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
-                                  image: AssetImage('images/doctor.png'),
+                                  image: AssetImage('images/doktor.png'),
                                 )),
                           ),
                           Positioned(
@@ -576,7 +599,7 @@ class _SearchDoctorState extends State<SearchDoctor> {
                                 color: const Color.fromARGB(255, 226, 232, 235),
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
-                                  image: AssetImage('images/boy.png'),
+                                  image: AssetImage('images/doktor4.png'),
                                 )),
                           ),
                           Positioned(
@@ -696,7 +719,7 @@ class _SearchDoctorState extends State<SearchDoctor> {
                                 color: const Color.fromARGB(255, 226, 232, 235),
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
-                                  image: AssetImage('images/doctor.png'),
+                                  image: AssetImage('images/doktor3.png'),
                                 )),
                           ),
                           Positioned(

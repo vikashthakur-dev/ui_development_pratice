@@ -194,8 +194,9 @@ class DoctorItemTileWidget extends StatelessWidget {
         Stack(
           children: [
             Container(
-              width: 60,
-              height: 60,
+              margin: EdgeInsets.only(),
+              width: 80,
+              height: 80,
               decoration: BoxDecoration(shape: BoxShape.circle),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(50),
@@ -206,8 +207,8 @@ class DoctorItemTileWidget extends StatelessWidget {
               ),
             ),
             Positioned(
-                top: 5,
-                left: 50,
+                top: 2,
+                left: 58,
                 child: CircleAvatar(
                   backgroundColor: Colors.green,
                   minRadius: 5,

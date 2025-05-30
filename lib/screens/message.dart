@@ -11,7 +11,7 @@ class _MessageState extends State<Message> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
-          padding: EdgeInsets.only(top: 40, right: 20, left: 20),
+          padding: EdgeInsets.only(top: 50, right: 20, left: 20),
           child: Column(
             children: [
               Row(
@@ -64,14 +64,14 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('images/doktor.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          //   color: const Color.fromARGB(255, 226, 232, 235),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,
@@ -107,14 +107,15 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('images/doktor1.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          // color:
+                          //               const Color.fromARGB(255, 226, 232, 235),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,
@@ -150,14 +151,14 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('images/doktor2.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          // color: const Color.fromARGB(255, 223, 240, 248),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,
@@ -193,14 +194,14 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('images/doctor.png')),
+                              image: AssetImage('images/doktor3.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          // color: const Color.fromARGB(255, 223, 240, 248),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,
@@ -236,14 +237,14 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('images/doktor.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          // color: const Color.fromARGB(255, 223, 240, 248),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,
@@ -279,14 +280,14 @@ class _MessageState extends State<Message> {
               Row(
                 children: [
                   Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 60,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('images/cute.png')),
                           // color: Colors.redAccent,
-                          color: const Color.fromARGB(255, 223, 240, 248),
-                          //   color: Color(0xffff9f9f9),
+                          // color: const Color.fromARGB(255, 223, 240, 248),
+                          color: Color(0xffff9f9f9),
                           shape: BoxShape.circle)),
                   SizedBox(
                     width: 10,

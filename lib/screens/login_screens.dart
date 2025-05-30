@@ -30,7 +30,8 @@ class _LoginScreensState extends State<LoginScreens> {
               width: MediaQuery.of(context).size.width,
               height: 300,
               decoration: BoxDecoration(
-                  color: Colors.indigo, borderRadius: BorderRadius.only()),
+                  // color: Colors.indigo,
+                  borderRadius: BorderRadius.only()),
               child: MasonryGridView.builder(
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
@@ -64,7 +65,9 @@ class _LoginScreensState extends State<LoginScreens> {
                 children: [
                   Text(
                     'Login Using Mobile Number',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
                   SizedBox(
                     height: 10,

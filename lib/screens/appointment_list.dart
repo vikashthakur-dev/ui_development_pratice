@@ -20,7 +20,12 @@ class _AppointmentListState extends State<AppointmentList> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        actions: [Icon(Icons.filter_alt_outlined)],
+        actions: [
+          Icon(Icons.filter_alt_outlined),
+          SizedBox(
+            width: 20,
+          )
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -65,6 +70,7 @@ class _AppointmentListState extends State<AppointmentList> {
                     Text(
                       'General Practitioner - North Purwokerto',
                       style: TextStyle(
+                        fontSize: 13,
                         color: Colors.blueGrey,
                       ),
                     ),
@@ -75,7 +81,7 @@ class _AppointmentListState extends State<AppointmentList> {
                       children: [
                         Icon(
                           Icons.calendar_today_outlined,
-                          size: 17,
+                          size: 15,
                           color: Color(0xfff7882d9),
                         ),
                         SizedBox(
@@ -84,6 +90,7 @@ class _AppointmentListState extends State<AppointmentList> {
                         Text(
                           'Monday, July 15',
                           style: TextStyle(
+                            fontSize: 13,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -92,7 +99,7 @@ class _AppointmentListState extends State<AppointmentList> {
                         ),
                         Icon(
                           Icons.alarm,
-                          size: 19,
+                          size: 15,
                           color: Color(0xfff7882d9),
                         ),
                         SizedBox(
@@ -101,7 +108,7 @@ class _AppointmentListState extends State<AppointmentList> {
                         Text(
                           '9:00 Am-10:00 Am',
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 12,
                             color: Colors.blueGrey,
                           ),
                         )
@@ -134,7 +141,7 @@ class _AppointmentListState extends State<AppointmentList> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(50),
                         child: Image.asset(
-                          'images/doctor.png',
+                          'images/doktor.png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -156,6 +163,7 @@ class _AppointmentListState extends State<AppointmentList> {
                         Text(
                           'General Practitioner - North Purwokerto',
                           style: TextStyle(
+                            fontSize: 13,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -166,15 +174,16 @@ class _AppointmentListState extends State<AppointmentList> {
                           children: [
                             Icon(
                               Icons.calendar_today_outlined,
-                              size: 17,
+                              size: 15,
                               color: Color(0xfff7882d9),
                             ),
                             SizedBox(
                               width: 5,
                             ),
                             Text(
-                              'Wednesday, July 15',
+                              'Monday, July 15',
                               style: TextStyle(
+                                fontSize: 13,
                                 color: Colors.blueGrey,
                               ),
                             ),
@@ -183,7 +192,7 @@ class _AppointmentListState extends State<AppointmentList> {
                             ),
                             Icon(
                               Icons.alarm,
-                              size: 19,
+                              size: 15,
                               color: Color(0xfff7882d9),
                             ),
                             SizedBox(
@@ -192,7 +201,7 @@ class _AppointmentListState extends State<AppointmentList> {
                             Text(
                               '9:00 Am-10:00 Am',
                               style: TextStyle(
-                                fontSize: 13,
+                                fontSize: 12,
                                 color: Colors.blueGrey,
                               ),
                             )
@@ -235,7 +244,7 @@ class _AppointmentListState extends State<AppointmentList> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'dr, Darlene Robertson',
+                          'dr. Darlene Robertson',
                           style: TextStyle(
                               fontSize: 17, fontWeight: FontWeight.bold),
                         ),
@@ -245,6 +254,7 @@ class _AppointmentListState extends State<AppointmentList> {
                         Text(
                           'General Practitioner - North Purwokerto',
                           style: TextStyle(
+                            fontSize: 13,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -255,15 +265,16 @@ class _AppointmentListState extends State<AppointmentList> {
                           children: [
                             Icon(
                               Icons.calendar_today_outlined,
-                              size: 17,
+                              size: 15,
                               color: Color(0xfff7882d9),
                             ),
                             SizedBox(
                               width: 5,
                             ),
                             Text(
-                              'Wednesday, July 15',
+                              'Monday, July 15',
                               style: TextStyle(
+                                fontSize: 13,
                                 color: Colors.blueGrey,
                               ),
                             ),
@@ -272,7 +283,7 @@ class _AppointmentListState extends State<AppointmentList> {
                             ),
                             Icon(
                               Icons.alarm,
-                              size: 19,
+                              size: 15,
                               color: Color(0xfff7882d9),
                             ),
                             SizedBox(
@@ -281,7 +292,9 @@ class _AppointmentListState extends State<AppointmentList> {
                             Text(
                               '9:00 Am-10:00 Am',
                               style: TextStyle(
-                                  fontSize: 13, color: Color(0xfff8b8f92)),
+                                fontSize: 12,
+                                color: Colors.blueGrey,
+                              ),
                             )
                           ],
                         )

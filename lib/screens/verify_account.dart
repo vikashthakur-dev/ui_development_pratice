@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pinput/pinput.dart';
 
 class VerifyAccount extends StatefulWidget {
   @override
@@ -9,20 +10,20 @@ class _VerifyAccountState extends State<VerifyAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: Icon(Icons.arrow_back),
+      ),
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.only(top: 40, left: 25, right: 25),
+        padding: EdgeInsets.only(top: 20, left: 25, right: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Icon(Icons.arrow_back),
-            SizedBox(
-              height: 30,
-            ),
             Text(
               'Verify Your Account',
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -54,82 +55,88 @@ class _VerifyAccountState extends State<VerifyAccount> {
             SizedBox(
               height: 30,
             ),
-            Row(
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      //color: Colors.amber,
-                      color: Color(0xffff9f9f9),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      //color: Colors.amber,
-                      color: Color(0xffff9f9f9),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      //color: Colors.amber,
-                      color: Color(0xffff9f9f9),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      //color: Colors.amber,
-                      color: Color(0xffff9f9f9),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                      //color: Colors.amber,
-                      color: Color(0xffff9f9f9),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-              ],
+
+            Pinput(
+              length: 6,
             ),
+
+            // Row(
+            //   children: [
+            //     Container(
+            //       width: 60,
+            //       height: 60,
+            //       decoration: BoxDecoration(
+            //           //color: Colors.amber,
+            //           color: Color(0xffff9f9f9),
+            //           borderRadius: BorderRadius.circular(10)),
+            //       child: TextField(
+            //         textAlign: TextAlign.center,
+            //         decoration: InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //     SizedBox(
+            //       width: 10,
+            //     ),
+            //     Container(
+            //       width: 60,
+            //       height: 60,
+            //       decoration: BoxDecoration(
+            //           //color: Colors.amber,
+            //           color: Color(0xffff9f9f9),
+            //           borderRadius: BorderRadius.circular(10)),
+            //       child: TextField(
+            //         textAlign: TextAlign.center,
+            //         decoration: InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //     SizedBox(
+            //       width: 10,
+            //     ),
+            //     Container(
+            //       width: 60,
+            //       height: 60,
+            //       decoration: BoxDecoration(
+            //           //color: Colors.amber,
+            //           color: Color(0xffff9f9f9),
+            //           borderRadius: BorderRadius.circular(10)),
+            //       child: TextField(
+            //         textAlign: TextAlign.center,
+            //         decoration: InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //     SizedBox(
+            //       width: 10,
+            //     ),
+            //     Container(
+            //       width: 60,
+            //       height: 60,
+            //       decoration: BoxDecoration(
+            //           //color: Colors.amber,
+            //           color: Color(0xffff9f9f9),
+            //           borderRadius: BorderRadius.circular(10)),
+            //       child: TextField(
+            //         textAlign: TextAlign.center,
+            //         decoration: InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //     SizedBox(
+            //       width: 10,
+            //     ),
+            //     Container(
+            //       width: 60,
+            //       height: 60,
+            //       decoration: BoxDecoration(
+            //           //color: Colors.amber,
+            //           color: Color(0xffff9f9f9),
+            //           borderRadius: BorderRadius.circular(10)),
+            //       child: TextField(
+            //         textAlign: TextAlign.center,
+            //         decoration: InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //   ],
+            // ),
+
             SizedBox(
               height: 35,
             ),

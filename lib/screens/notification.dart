@@ -49,7 +49,7 @@ class _NotificationState extends State<Notifications> {
                             Text(
                               'Weekend Promotion ',
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text('2:30 pm')
@@ -59,8 +59,9 @@ class _NotificationState extends State<Notifications> {
                           height: 5,
                         ),
                         Text(
-                          '50% discount for every 2* transaction at least \nRp 200.000',
+                          '50% discount for every 2* transaction at least\nRp 200.000',
                           style: TextStyle(
+                              fontSize: 11,
                               color: Colors.blueGrey,
                               fontWeight: FontWeight.bold),
                         ),
@@ -111,7 +112,7 @@ class _NotificationState extends State<Notifications> {
                             Text(
                               'New User Alert',
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text('2:30')
@@ -120,6 +121,7 @@ class _NotificationState extends State<Notifications> {
                         Text(
                           'Verify Your account  with regional pasport \nfor bettor experience',
                           style: TextStyle(
+                              fontSize: 12,
                               color: Colors.blueGrey,
                               fontWeight: FontWeight.bold),
                         )
@@ -170,7 +172,7 @@ class _NotificationState extends State<Notifications> {
                             Text(
                               'New Update Available',
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text('3:30')
@@ -179,6 +181,7 @@ class _NotificationState extends State<Notifications> {
                         Text(
                           'Lets update to mewest version ro get better\nexperience in Findoc.',
                           style: TextStyle(
+                              fontSize: 12,
                               color: Colors.blueGrey,
                               fontWeight: FontWeight.bold),
                         )
@@ -231,7 +234,7 @@ class _NotificationState extends State<Notifications> {
                             Text(
                               '2 Messages Unread',
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text('2.32 PM')
@@ -240,6 +243,7 @@ class _NotificationState extends State<Notifications> {
                         Text(
                           'New messages from Dr. Kaela Lolsavkia, Dr\nDiane Russell, and etc.',
                           style: TextStyle(
+                              fontSize: 12,
                               color: Colors.blueGrey,
                               fontWeight: FontWeight.bold),
                         )

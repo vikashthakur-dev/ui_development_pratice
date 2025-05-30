@@ -13,24 +13,25 @@ class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        //  bottom: Divider(),
-        //  leadingWidth: 10,
-        leading: Icon(Icons.person),
-        actions: [
-          CircleAvatar(),
-          SizedBox(
-            width: 10,
-          )
-        ],
-      ),
+      // appBar: AppBar(
+      //   //  bottom: Divider(),
+      //   //  leadingWidth: 10,
+      //   leading: Icon(Icons.person),
+      //   actions: [
+      //     CircleAvatar(),
+      //     SizedBox(
+      //       width: 10,
+      //     )
+      //   ],
+      // ),
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Divider(),
+          //   Divider(),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.all(25),
+              padding:
+                  EdgeInsets.only(top: 40, left: 20, right: 20, bottom: 20),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +48,10 @@ class _CreateAccountState extends State<CreateAccount> {
                     SizedBox(
                       height: 30,
                     ),
-                    RecommendedDoctorWidget(),
+                    // RecommendedDoctorWidget(),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
                     Text(
                       'Full Name',
                       style:

@@ -409,7 +409,7 @@ class _AlexawelState extends State<Alexawel> {
                           ),
                           Divider(),
                           SizedBox(
-                            height: 20,
+                            height: 17,
                           ),
                           //    2nd artical
                           Row(
@@ -487,7 +487,7 @@ class _AlexawelState extends State<Alexawel> {
                           ),
                           Divider(),
                           SizedBox(
-                            height: 20,
+                            height: 17,
                           ),
                           Row(
                             children: [

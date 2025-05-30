@@ -17,6 +17,17 @@ class _DoctorLoctionState extends State<DoctorLoction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: Icon(
+          Icons.arrow_back,
+          color: Colors.black,
+        ),
+        title: Text(
+          'Make Appoinment',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+      ),
       backgroundColor: Colors.white,
       // appBar: AppBar(
       //   backgroundColor: Colors.white,
@@ -44,25 +55,24 @@ class _DoctorLoctionState extends State<DoctorLoction> {
         child: Column(
           children: [
             Padding(
-              padding:
-                  EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
+              padding: EdgeInsets.only(left: 20, right: 20, bottom: 20),
               child: Center(
                 child: Row(
                   //    crossAxisAlignment: CrossAxisAlignment.center,
                   //  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.arrow_back),
-                    Spacer(),
-                    Text(
-                      'Make Appoinment',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                    Spacer(),
-                    Icon(
-                      Icons.filter_alt_outlined,
-                      color: Colors.black,
-                    ),
+                    // Icon(Icons.arrow_back),
+                    // Spacer(),
+                    // Text(
+                    //   'Make Appoinment',
+                    //   style:
+                    //       TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    // ),
+                    // Spacer(),
+                    // Icon(
+                    //   Icons.filter_alt_outlined,
+                    //   color: Colors.black,
+                    // ),
                   ],
                 ),
               ),

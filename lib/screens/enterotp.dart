@@ -18,7 +18,7 @@ class _EnterotpState extends State<Enterotp> {
         children: [
           Padding(
             padding:
-                const EdgeInsets.only(top: 30, left: 20, right: 20, bottom: 7),
+                const EdgeInsets.only(top: 60, left: 20, right: 20, bottom: 7),
             child: Row(
               children: [
                 Icon(Icons.arrow_back_ios_new_rounded),
@@ -91,7 +91,7 @@ class _EnterotpState extends State<Enterotp> {
                     ),
                     Text(
                       '00:40',
-                      style: TextStyle(color: Colors.blue),
+                      style: TextStyle(color: Colors.indigo),
                     )
                   ],
                 ),

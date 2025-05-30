@@ -88,107 +88,110 @@ class _LestState extends State<Lest> {
     return Scaffold(
       //  backgroundColor: const Color.fromARGB(255, 41, 36, 36),
       // backgroundColor: Color(0xfff303030),
-      body: StickyGroupedListView<Element, DateTime>(
-        //  useStickyGroupSeparators: true,
-        order: StickyGroupedListOrder.ASC,
-        elements: elements,
-        groupBy: (element) =>
-            DateTime(element.date.year, element.date.month, element.date.day),
-        // groupComparator: (DateTime value1, DateTime value2) =>
-        //     value2.compareTo(value1),
-        itemComparator: (Element element1, Element element2) =>
-            element1.date.compareTo(element2.date),
-        floatingHeader: true,
-        groupSeparatorBuilder: (element) {
-          return Container(
-            height: 50,
-            child: Align(
-              alignment: Alignment.center,
-              child: Container(
-                padding: EdgeInsets.all(6.0),
-                width: 120,
-                decoration: BoxDecoration(
-                    color: Color(0xfff5fb5fa),
-                    borderRadius: BorderRadius.circular(20)),
-                child: Text(
-                  '${element.date.day}. ${element.date.month}, ${element.date.year}',
-                  textAlign: TextAlign.center,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 40),
+        child: StickyGroupedListView<Element, DateTime>(
+          //  useStickyGroupSeparators: true,
+          order: StickyGroupedListOrder.ASC,
+          elements: elements,
+          groupBy: (element) =>
+              DateTime(element.date.year, element.date.month, element.date.day),
+          // groupComparator: (DateTime value1, DateTime value2) =>
+          //     value2.compareTo(value1),
+          itemComparator: (Element element1, Element element2) =>
+              element1.date.compareTo(element2.date),
+          floatingHeader: true,
+          groupSeparatorBuilder: (element) {
+            return Container(
+              height: 50,
+              child: Align(
+                alignment: Alignment.center,
+                child: Container(
+                  padding: EdgeInsets.all(6.0),
+                  width: 120,
+                  decoration: BoxDecoration(
+                      color: Color(0xfff5fb5fa),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Text(
+                    '${element.date.day}. ${element.date.month}, ${element.date.year}',
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
-            ),
-          );
-        },
+            );
+          },
 
-        //useStickyGroupSeparators: true,
-        // floatingHeader: true,
-        itemBuilder: (context, element) {
-          // return Row(
-          //   children: [
-          //     Column(
-          //       children: [
-          //         Container(
-          //           margin: EdgeInsets.all(15),
-          //           padding: EdgeInsets.all(8.0),
-          //           decoration: BoxDecoration(
-          //               borderRadius: BorderRadius.circular(10),
-          //               color: Colors.amber),
-          //           child: Center(
-          //             child: Text(
-          //               element.message,
-          //               style: TextStyle(
-          //                   // color: Colors.white,
-          //                   fontSize: 15,
-          //                   //  color: Color(0xfff424242),
-          //                   fontWeight: FontWeight.bold),
-          //             ),
-          //           ),
-          //         ),
-          //       ],
-          //     )
-          //   ],
-          // );
-          return Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (element.name == 'vikash') Spacer(),
-              Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(8),
-                    margin: EdgeInsets.only(
-                        left: 12, right: 12, top: 30, bottom: 30),
-                    decoration: BoxDecoration(
-                        color: (element.name == 'vikash')
-                            ? Colors.indigo
-                            : Color(0xfff424242),
-                        borderRadius: BorderRadius.circular(10)),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        // Icon(
-                        //   element.icon,
-                        //   color: Colors.white,
-                        // ),
-                        SizedBox(
-                          width: 8,
-                        ),
-                        // Text(element.name),
-                        Text(
-                          element.message,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              //  color: Color(0xfff424242),
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ],
+          //useStickyGroupSeparators: true,
+          // floatingHeader: true,
+          itemBuilder: (context, element) {
+            // return Row(
+            //   children: [
+            //     Column(
+            //       children: [
+            //         Container(
+            //           margin: EdgeInsets.all(15),
+            //           padding: EdgeInsets.all(8.0),
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(10),
+            //               color: Colors.amber),
+            //           child: Center(
+            //             child: Text(
+            //               element.message,
+            //               style: TextStyle(
+            //                   // color: Colors.white,
+            //                   fontSize: 15,
+            //                   //  color: Color(0xfff424242),
+            //                   fontWeight: FontWeight.bold),
+            //             ),
+            //           ),
+            //         ),
+            //       ],
+            //     )
+            //   ],
+            // );
+            return Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (element.name == 'vikash') Spacer(),
+                Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      margin: EdgeInsets.only(
+                          left: 12, right: 12, top: 30, bottom: 30),
+                      decoration: BoxDecoration(
+                          color: (element.name == 'vikash')
+                              ? Colors.indigo
+                              : Color(0xfff424242),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          // Icon(
+                          //   element.icon,
+                          //   color: Colors.white,
+                          // ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          // Text(element.name),
+                          Text(
+                            element.message,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                //  color: Color(0xfff424242),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ],
-          );
-        },
+                  ],
+                ),
+              ],
+            );
+          },
+        ),
       ),
 
       // body: StickyGroupedListView(

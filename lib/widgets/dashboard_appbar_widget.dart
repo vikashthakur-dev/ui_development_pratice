@@ -7,9 +7,6 @@ class DashboardAppbarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(
-          height: 30,
-        ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

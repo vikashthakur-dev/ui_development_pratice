@@ -12,14 +12,14 @@ class _ChtUiState extends State<Doctorchat> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+        padding: EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(
           children: [
             Row(
               children: [
                 Icon(Icons.arrow_back),
                 SizedBox(
-                  width: 20,
+                  width: 10,
                 ),
                 Stack(clipBehavior: Clip.none, children: [
                   CircleAvatar(
@@ -28,7 +28,7 @@ class _ChtUiState extends State<Doctorchat> {
                     radius: 25,
                   ),
                   SizedBox(
-                    width: 30,
+                    width: 20,
                   ),
                   Positioned(
                       left: 35,
@@ -40,7 +40,7 @@ class _ChtUiState extends State<Doctorchat> {
                       ))
                 ]),
                 SizedBox(
-                  width: 20,
+                  width: 10,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

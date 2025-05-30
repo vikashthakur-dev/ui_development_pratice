@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:play/screens/Alexawel.dart';
 
 class PaymentSuccess extends StatefulWidget {
   @override
@@ -15,10 +16,15 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
         leading: Icon(Icons.arrow_back),
         title: Text(
           'Make Appointment',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        actions: [Icon(Icons.filter_alt_outlined)],
+        actions: [
+          Icon(Icons.filter_alt_outlined),
+          SizedBox(
+            width: 15,
+          )
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.only(top: 20, right: 20, left: 20),
@@ -29,7 +35,7 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
               'Doctor and Location',
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold),
             ),
             SizedBox(
@@ -45,7 +51,7 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(50),
                     child: Image.asset(
-                      'images/doctor.png',
+                      'images/doktor.png',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -53,19 +59,21 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
                 SizedBox(
                   width: 10,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Dr.Eleanor Pena',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'Gerenal Practitioner',
-                      style: TextStyle(color: Colors.blueGrey),
-                    )
-                  ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Dr.Eleanor Pena',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Gerenal Practitioner',
+                        style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
@@ -98,12 +106,15 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
                     ),
                     Text(
                       '116.20 State Route 41,West Union...',
-                      style: TextStyle(color: Colors.blueGrey),
+                      style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                     ),
                   ],
                 ),
                 Spacer(),
-                Icon(Icons.arrow_forward_ios_rounded),
+                Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 18,
+                ),
               ],
             ),
             SizedBox(
@@ -180,32 +191,41 @@ class _PaymentSuccessState extends State<PaymentSuccess> {
                                       'Yep! Starm consulting with the doctor of your',
                                       style: TextStyle(
                                           color: Colors.blueGrey,
-                                          fontSize: 16,
+                                          fontSize: 14,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Text(
                                       'choice,hope you get well soon ',
                                       style: TextStyle(
                                           color: Colors.blueGrey,
-                                          fontSize: 16,
+                                          fontSize: 14,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     SizedBox(
                                       height: 60,
                                     ),
-                                    Container(
-                                      width: 300,
-                                      height: 50,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                          color: Colors.indigo[500]),
-                                      child: Center(
-                                        child: Text(
-                                          'Back to Home page',
-                                          style: TextStyle(
-                                              fontSize: 16,
-                                              color: Colors.white),
+                                    InkWell(
+                                      onTap: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Alexawel()));
+                                      },
+                                      child: Container(
+                                        width: 300,
+                                        height: 50,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            color: Colors.indigo[500]),
+                                        child: Center(
+                                          child: Text(
+                                            'Back to Home page',
+                                            style: TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white),
+                                          ),
                                         ),
                                       ),
                                     )

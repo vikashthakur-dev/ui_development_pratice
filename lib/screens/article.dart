@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:play/screens/Alexawel.dart';
+import 'package:play/screens/artical2.dart';
+import 'package:play/screens/create_profile.dart';
+import 'package:play/screens/doctor_appointment.dart';
+import 'package:play/screens/message.dart';
+import 'package:play/screens/profile.dart';
 
 class Article extends StatefulWidget {
   @override
@@ -10,6 +16,30 @@ class _ArticleState extends State<Article> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          'Article',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          Stack(
+            children: [
+              Icon(Icons.notifications_none),
+              Positioned(
+                  left: 10,
+                  bottom: 13,
+                  child: CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.red,
+                  )),
+            ],
+          ),
+          SizedBox(
+            width: 10,
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -17,49 +47,61 @@ class _ArticleState extends State<Article> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Text(
-                    'Article',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              // Row(
+              //   children: [
+              //    Text(
+              //      'Article',
+              //      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              //  ),
+              //     Spacer(),
+              // Stack(
+              //   children: [
+              //     Icon(Icons.notifications_none),
+              //     Positioned(
+              //         left: 12,
+              //         bottom: 13,
+              //         child: CircleAvatar(
+              //           radius: 4,
+              //           backgroundColor: Colors.red,
+              //         ))
+              //   ],
+              // )
+              //   ],
+              // ),
+
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Artical2()));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Send Next Page'),
+                      action: SnackBarAction(label: 'Retry', onPressed: () {}),
+                    ),
+                  );
+                },
+                child: Container(
+                  //width: 380,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    //  color: Colors.amberAccent
+                    color: Color(0xffff9f9f9),
                   ),
-                  Spacer(),
-                  Stack(
-                    children: [
-                      Icon(Icons.notifications_none),
-                      Positioned(
-                          left: 12,
-                          bottom: 13,
-                          child: CircleAvatar(
-                            radius: 4,
-                            backgroundColor: Colors.red,
-                          ))
-                    ],
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Container(
-                //width: 380,
-                height: 60,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  //  color: Colors.amberAccent
-                  color: Color(0xffff9f9f9),
-                ),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.search,
-                        size: 30,
-                      ),
-                      border: InputBorder.none,
-                      hintText: 'Search Article',
-                      hintStyle:
-                          TextStyle(color: Colors.blueGrey, fontSize: 17)),
-                  textAlignVertical: TextAlignVertical.center,
+                  child: TextFormField(
+                    readOnly: true,
+                    enabled: false,
+                    decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.search,
+                          size: 30,
+                        ),
+                        border: InputBorder.none,
+                        hintText: 'Search Article',
+                        hintStyle:
+                            TextStyle(color: Colors.blueGrey, fontSize: 17)),
+                    textAlignVertical: TextAlignVertical.center,
+                  ),
                 ),
               ),
               SizedBox(
@@ -76,33 +118,35 @@ class _ArticleState extends State<Article> {
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    height: 250,
+                    height: 200,
                     decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
-                            image: NetworkImage(
-                                'https://media.istockphoto.com/id/679524826/photo/the-doctor-prepares-the-syringe-for-vaccination.jpg?s=612x612&w=0&k=20&c=yZdg4jlAqb4JAnynuNXRxAdmqtqlf3dTmAwkDEF2Nb4='),
+                            image: AssetImage(
+                              'images/doctorwithsui.jpg',
+                            ),
                             fit: BoxFit.cover)),
                   ),
                   Positioned(
-                      left: 50,
-                      bottom: -20,
+                      left: 18,
+                      bottom: -30,
                       child: Container(
+                        // margin: EdgeInsets.only(top: 20),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.white),
-                        padding: EdgeInsets.all(7),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'why didn\'t the covid-19 vaccination\nroll-out work for immunocompromised',
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.bold),
+                                  fontSize: 15, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
-                              height: 15,
+                              height: 12,
                             ),
                             Text('june 09 ,20224   4 min read ')
                           ],
@@ -111,23 +155,23 @@ class _ArticleState extends State<Article> {
                 ],
               ),
               SizedBox(
-                height: 40,
+                height: 55,
               ),
               Row(
                 children: [
                   Text(
                     'For You',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   Spacer(),
                   Text(
-                    'view All',
-                    style: TextStyle(fontSize: 20, color: Colors.blueGrey),
+                    'View All',
+                    style: TextStyle(fontSize: 18, color: Colors.blueGrey),
                   )
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 12,
               ),
               Container(
                   //  margin: EdgeInsets.only(right: 80),
@@ -142,11 +186,12 @@ class _ArticleState extends State<Article> {
                           Container(
                             margin: EdgeInsets.only(right: 10, top: 10),
                             width: 250,
-                            height: 200,
+                            height: 160,
                             decoration: BoxDecoration(
                                 image: DecorationImage(
-                                    image: NetworkImage(
-                                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkNMdSyHruSIQJUZNgpdTyd4wMS-JNE1VjJiTpen371kz4pJG8Ri_Ww8Oua3HM5fR-6o&usqp=CAU'),
+                                    image: AssetImage(
+                                      'images/doctorwithnote.jpeg',
+                                    ),
                                     fit: BoxFit.cover),
                                 borderRadius: BorderRadius.circular(10),
                                 color: Colors.cyan),
@@ -165,13 +210,13 @@ class _ArticleState extends State<Article> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 10),
+                            margin: EdgeInsets.only(right: 10, top: 10),
                             width: 250,
-                            height: 200,
+                            height: 160,
                             decoration: BoxDecoration(
                                 image: DecorationImage(
-                                    image: NetworkImage(
-                                        'https://media.istockphoto.com/id/1328653906/photo/mature-doctor-giving-covid-19-or-flu-antivirus-vaccine-shot-to-young-men-patients-arm-at.jpg?s=612x612&w=0&k=20&c=K6TOqoodfqkmzaLBG9ZGOdXJk7uAkcQQcr8rUBdTUww='),
+                                    image: AssetImage(
+                                        'images/doctorwithpasent.webp'),
                                     fit: BoxFit.cover),
                                 borderRadius: BorderRadius.circular(10),
                                 color: Colors.cyan),
@@ -186,13 +231,30 @@ class _ArticleState extends State<Article> {
                           )
                         ],
                       ),
-                      Container(
-                        // margin: EdgeInsets.all(0),
-                        width: 250,
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.cyan),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 10, top: 10),
+                            width: 250,
+                            height: 160,
+                            decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        'images/macsdoctor-removebg-preview.png'),
+                                    fit: BoxFit.cover),
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.cyan),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            'Self defence services: the\nradical and a',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          )
+                        ],
                       ),
                     ],
                   ))
@@ -201,6 +263,7 @@ class _ArticleState extends State<Article> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Discover'),
@@ -210,10 +273,30 @@ class _ArticleState extends State<Article> {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
         ],
         currentIndex: selected,
-        onTap: (value) {
+        onTap: (index) {
           setState(() {
-            selected = value;
+            selected = index;
           });
+          if (index == 0) {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Alexawel()));
+          }
+          if (index == 1) {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => DoctorAppointment()));
+          }
+          if (index == 2) {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Message()));
+          }
+          if (index == 3) {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Artical2()));
+          }
+          if (index == 4) {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => CreateProfile()));
+          }
         },
       ),
     );
